@@ -1,1 +1,83 @@
-/* Denna fil skall innehålla din CSS kod */
+body {
+    margin: 0;
+    background-image: url("../img/cherry.jpeg");
+    background-size: 100%;
+}
+
+.GridWrapper {
+display: grid;
+grid-template-areas:
+"as1 di di di di as2"
+"as1 a1 a1 a1 a1 as2"
+"as1 a2 a2 a2 a2 as2"
+"as1 fo fo fo fo as2"
+;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.article1 {
+    display: flex; 
+    grid-area: a1;
+    height: 160px;
+    margin-right: 160px;
+    margin-left: 0px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.article2 {
+    grid-area: a2;
+    height: 250px;
+    width: 400px;
+    margin-right: 0px;
+    margin-left: 20px;
+    margin-bottom: 100px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(103, 61, 47) ;
+    font-weight: bold;
+    height: 170px;
+    border-radius: 15%;
+    text-align: center;
+    border-style: solid;
+    border-color: rgb(240, 165, 186);
+    background-color: rgba(255, 255, 255, 0.653); 
+}
+
+.aside1 {
+    grid-area: as1;
+    margin-right: 170px;
+    margin-left: 90px;
+    margin-top: 210px;
+}
+
+.aside2 {
+    grid-area: as2;
+    margin-left: 0px;
+    width: 115px;
+    margin-right: 220px;
+    margin-top: 210px;
+}
+
+.footer {
+    grid-area: fo;
+    margin-right: -170px;
+    margin-left: -170px;
+}
+
+.click {
+    grid-area: di;
+    display: flex; 
+    justify-content: space-around;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: white;
+    color: rgb(103, 61, 47) ;
+}
+
+a {
+    text-decoration: none; 
+    color: rgb(103, 61, 47) ;
+}

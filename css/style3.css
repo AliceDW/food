@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    background-image: url("../img/cherry.jpeg");
+    background-size: 100%;
+}
+
+.GridWrapper {
+    display: grid;
+    grid-template-areas:
+    "as he he he he he"
+    "ar1 ar1 ar1 ar2 ar2 ar2"
+    "ar3 ar3 ar3 ar4 ar4 ar4"
+    "ar5 ar5 ar5 ar6 ar6 ar6" 
+    }
+
+.header {
+    grid-area: he;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100px;
+    font-size: 25px;
+    color: rgb(103, 61, 47) ;
+    margin-bottom: 40px;
+}
+
+.aside {
+    grid-area: as;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    width: 100px;
+}
+
+.article1 {
+    grid-area: ar1;
+    display: flex; 
+    justify-content: center;
+    margin-left: 350px;
+    width: 350px;
+}
+
+.article2 {
+    grid-area: ar2;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    width: 350px;
+    height: 200px;
+    margin-top: 50px;
+    margin-right: 330px;
+    color: rgb(103, 61, 47) ;
+    height: 170px;
+    border-radius: 15%;
+    text-align: center;
+    border-style: solid;
+    border-color: rgb(240, 165, 186);
+    background-color: rgba(255, 255, 255, 0.653);
+    font-size: 15px;
+}
+
+.article3 {
+    grid-area: ar3;
+    display: flex; 
+    justify-content: center;
+    margin-left: 350px;
+    width: 350px;
+}
+
+.article4 {
+    grid-area: ar4;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    width: 350px;
+    height: 200px;
+    margin-top: 50px;
+    margin-right: 330px;
+    color: rgb(103, 61, 47) ;
+    height: 170px;
+    border-radius: 15%;
+    text-align: center;
+    border-style: solid;
+    border-color: rgb(240, 165, 186);
+    background-color: rgba(255, 255, 255, 0.653);
+    font-size: 15px;
+}
+
+.article5 {
+    grid-area: ar5;
+    display: flex; 
+    justify-content: center;
+    margin-left: 350px;
+    width: 350px;
+}
+
+.article6 {
+    grid-area: ar6;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    width: 350px;
+    height: 200px;
+    margin-top: 50px;
+    margin-right: 330px;
+    color: rgb(103, 61, 47) ;
+    height: 170px;
+    border-radius: 15%;
+    text-align: center;
+    border-style: solid;
+    border-color: rgb(240, 165, 186);
+    background-color: rgba(255, 255, 255, 0.653);
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none; 
+    color: rgb(103, 61, 47) ;
+}
